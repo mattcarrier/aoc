@@ -19,8 +19,8 @@ class Timed:
         finally:
             self.execution_time = round(time.time() * 1000 - start, 5)
 
-    @classmethod
-    def sum(cls, *timed: "Timed") -> float:
+    @staticmethod
+    def sum(*timed: "Timed") -> float:
         return round(sum((t.execution_time for t in timed)), 5)
 
 
