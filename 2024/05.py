@@ -4,6 +4,8 @@ from utils import Problem, ProblemRunner
 
 
 class Problem2024Day05(Problem):
+    """Solution to 2024/problems/05.md"""
+
     def __init__(self):
         """Parses the problem input.
 

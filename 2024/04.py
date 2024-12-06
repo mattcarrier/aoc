@@ -2,6 +2,8 @@ from utils import Problem, ProblemRunner
 
 
 class Problem2024Day04(Problem):
+    """Solution to 2024/problems/04.md"""
+
     def __init__(self):
         """Parses the list of lines into a word search matrix"""
         super().__init__()
