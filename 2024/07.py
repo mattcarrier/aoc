@@ -51,7 +51,7 @@ class Problem2024Day07(Problem):
         def __post_init__(self) -> None:
             """Tries to solve the equation."""
             possible_results = {self.constants[0]}
-            for i, num in enumerate(self.constants[1:]):
+            for num in self.constants[1:]:
                 next_possible_results = set()
                 for current_result in possible_results:
                     for op in self.possible_operators:

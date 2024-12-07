@@ -62,7 +62,10 @@ class ProblemRunner:
         with Timed().start() as part2_time:
             p2 = problem.part_two()
 
-        print("-------\nAnswers\n-------")
+        print("".join(["-" for i in range(30)]))
+        print(self.problem_type.__name__)
+
+        print("\n-------\nAnswers\n-------")
         print(f"Part 1: {p1}")
         print(f"Part 2: {p2}")
 
@@ -82,3 +85,4 @@ class ProblemRunner:
             f"Combined: algorithmic: {Timed.sum(part1_time, part2_time)} | "
             f"algorithmic + setup: {Timed.sum(setup_time, part1_time, part2_time)}"
         )
+        print("".join(["-" for i in range(30)]))
