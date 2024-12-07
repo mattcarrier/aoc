@@ -79,17 +79,16 @@ class Problem2024Day07(Problem):
         )
 
     def part_one(self) -> int:
-        """Finds all the coordinates that the guard traverses along their predetermined path.
+        """Calculates the summation of the results for all valid equations with only the ADD and MULTIPLY operators.
 
-        :return: the total number of coordinates
+        :return: the summation
         """
         return self.solve_for_operators({self.Operator.ADD, self.Operator.MULTIPLY})
 
     def part_two(self) -> int:
-        """Finds all the possible coordinates where a single obstacle can be placed that would trick the guard to get
-        caught in a looping path.
+        """Calculates the summation of the results for all valid equations with all possible operators.
 
-        :return: the total number of possible coordinates
+        :return: the summation
         """
         return self.solve_for_operators({op for op in self.Operator})
 
